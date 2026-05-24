@@ -1,0 +1,25 @@
+
+name: tynex_ai
+description: Premium AI app
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.0 <4.0.0'
+
+dependencies:
+  animate_do: ^5.1.0
+  flutter:
+    sdk: flutter
+  flutter_animate: ^4.5.2
+  flutter_markdown: ^0.7.7+1
+  flutter_riverpod: ^2.5.1
+  font_awesome_flutter: ^11.0.0
+  glassmorphism: ^3.0.0
+  google_fonts: ^8.1.0
+  iconsax: ^0.0.8
+  lottie: ^3.3.3
+
+flutter:
+  uses-material-design: true
