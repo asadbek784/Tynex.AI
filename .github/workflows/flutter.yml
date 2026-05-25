@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - main
+  pull_request:
+    branches:
+      - main
 
 jobs:
   build:
@@ -24,8 +27,17 @@ jobs:
         with:
           flutter-version: '3.24.0'
 
+      - name: Get Flutter version
+        run: flutter --version
+
       - name: Install dependencies
         run: flutter pub get
+
+      - name: Analyze code
+        run: flutter analyze
+
+      - name: Run tests
+        run: flutter test
 
       - name: Build APK
         run: flutter build apk --release
